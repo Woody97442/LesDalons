@@ -43,12 +43,16 @@ function displayUsers(users) {
 
     const userEmail = document.createElement("div");
     userEmail.textContent = user.email;
+    
+    const userDate = document.createElement("div");
+    userDate.textContent = "Dalons depuis : " + user.registered.age + "ans";
 
     // Ajoute les élement à la card
     userCard.appendChild(genderIcon);
     userCard.appendChild(userAvatar);
     userCard.appendChild(userName);
     userCard.appendChild(userEmail);
+    userCard.appendChild(userDate);
 
     // Balence la card sur la page 
     userList.appendChild(userCard);
